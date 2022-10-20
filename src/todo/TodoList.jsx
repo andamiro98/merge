@@ -7,7 +7,7 @@ import {__getTodoThunk} from "../redux/modules/todosSlice"
 const TodoList = () =>{
     const todos = useSelector((state) => state.todos.todos);
     const dispatch = useDispatch();
-    
+    console.log("hi")
     useEffect(()=> {
         dispatch(__getTodoThunk());
     },[]); 
